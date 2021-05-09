@@ -5,11 +5,11 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
 
-const takePhoto = () => {
-  console.log('taking photo...')
-}
+import { usePhotoGallery } from '../hooks/usePhotoGallery'    
 
 const Tab2: React.FC = () => {
+  const  { takePhoto } = usePhotoGallery();
+  // view
   return (
     <IonPage>
       <IonHeader>
